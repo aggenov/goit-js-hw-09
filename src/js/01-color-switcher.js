@@ -8,8 +8,8 @@ startBtn.addEventListener('click', () => {
   timerId = setInterval(changeColor, 1000);
 });
 stopBtn.addEventListener('click', () => {
-  clearInterval(timerId);
   startBtn.disabled = false;
+  clearInterval(timerId);
 });
 
 function changeColor() {
